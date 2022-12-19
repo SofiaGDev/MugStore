@@ -10,8 +10,9 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+
 public class Mug {
 	
 	
@@ -20,6 +21,6 @@ public class Mug {
 		 Long id;
 		 String name;
 		 String type;
-		 String sizeml; 
+		 int sizeml; 
 
 }
