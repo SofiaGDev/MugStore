@@ -18,9 +18,9 @@ public class Mug {
 	
 		@Id
 		@GeneratedValue(strategy = GenerationType.AUTO)
-		 Long id;
-		 String name;
-		 String type;
-		 int sizeml; 
+		public  Long id;
+		 public String name;
+		 public String type;
+		 public int sizeml; 
 
 }

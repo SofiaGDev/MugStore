@@ -31,10 +31,19 @@ public  class MugController {
 	@GetMapping("/mug/{id}")
 	public Mug getMugById(@PathVariable Long id) {
 		return repository.getReferenceById(id);
+
 	}
 	
 	@PostMapping("/mug")
 	public Mug saveMug(@RequestBody Mug mug) {
+		System.out.println(mug);
+		System.out.println(mug.id);
+		System.out.println(mug.name);
+		System.out.println(mug.type);
+		System.out.println(mug.sizeml);
+
+		
+		
 		return repository.save(mug);
 	}
 	
